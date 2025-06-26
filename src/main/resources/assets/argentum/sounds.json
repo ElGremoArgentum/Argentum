@@ -1,0 +1,10 @@
+{
+  "mate_ruido": {
+    "sounds": [
+      {
+        "name": "argentum:mate_ruido",
+        "stream": false
+      }
+    ]
+  }
+}

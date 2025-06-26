@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "obtained_mate_listo": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "id": "argentum:mate_listo"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "display": {
+    "icon": {
+      "item": "argentum:mate_listo"
+    },
+    "title": {
+      "translate": "advancement.argentum.mate_listo.title"
+    },
+    "description": {
+      "translate": "advancement.argentum.mate_listo.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "obtained_termo_argento": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "id": "argentum:termo_argento"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "argentum:termo_argento"
+    },
+    "title": {
+      "translate": "advancement.argentum.crear_termo_argento.title"
+    },
+    "description": {
+      "translate": "advancement.argentum.crear_termo_argento.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  }
+}

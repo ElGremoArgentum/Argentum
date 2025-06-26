@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "obtained_as_espada": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "id": "argentum:as_espada"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "argentum:as_espada"
+    },
+    "title": {
+      "translate": "advancement.argentum.tener_as_espada.title"
+    },
+    "description": {
+      "translate": "advancement.argentum.tener_as_espada.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  }
+}

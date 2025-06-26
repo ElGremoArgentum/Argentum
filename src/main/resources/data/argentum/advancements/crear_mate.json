@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "obtained_mate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "id": "argentum:mate"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "argentum:mate"
+    },
+    "title": {
+      "translate": "advancement.argentum.crear_mate.title"
+    },
+    "description": {
+      "translate": "advancement.argentum.crear_mate.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  }
+}
