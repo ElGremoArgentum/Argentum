@@ -28,10 +28,90 @@ public class ModItem {
     public static final Item MATE = registerItem("mate", new MateItem(new Item.Settings()
             .food(ModFoodComponent.MATE)
             .maxCount(1)));
+
     public static final Item MATE_LISTO_BLANCO = registerItem("mate_listo_blanco", new MateListoItem(new Item.Settings()
-            .food(ModFoodComponent.MATELISTO)  // si querés que sea comestible igual que el mate
+            .food(ModFoodComponent.MATELISTO)
             .maxCount(1)
-            .maxDamage(16)
+    ));
+
+    public static final Item MATE_LISTO_NARANJA = registerItem("mate_listo_naranja", new MateListoItem(new Item.Settings()
+            .food(ModFoodComponent.MATELISTO)
+            .maxCount(1)
+    ));
+
+    public static final Item MATE_LISTO_MARRON = registerItem("mate_listo_marron", new MateListoItem(new Item.Settings()
+            .food(ModFoodComponent.MATELISTO)
+            .maxCount(1)
+    ));
+
+    public static final Item MATE_LISTO_MAGENTA = registerItem("mate_listo_magenta", new MateListoItem(new Item.Settings()
+            .food(ModFoodComponent.MATELISTO)
+            .maxCount(1)
+    ));
+
+    public static final Item MATE_LISTO_ROJO = registerItem("mate_listo_rojo", new MateListoItem(new Item.Settings()
+            .food(ModFoodComponent.MATELISTO)
+            .maxCount(1)
+    ));
+
+    public static final Item MATE_LISTO_VIOLETA = registerItem("mate_listo_violeta", new MateListoItem(new Item.Settings()
+            .food(ModFoodComponent.MATELISTO)
+            .maxCount(1)
+    ));
+
+    public static final Item MATE_LISTO_ROSA = registerItem("mate_listo_rosa", new MateListoItem(new Item.Settings()
+            .food(ModFoodComponent.MATELISTO)
+            .maxCount(1)
+    ));
+
+    public static final Item MATE_LISTO_VERDE2 = registerItem("mate_listo_verde2", new MateListoItem(new Item.Settings()
+            .food(ModFoodComponent.MATELISTO)
+            .maxCount(1)
+    ));
+
+    public static final Item MATE_LISTO_VERDE1 = registerItem("mate_listo_verde1", new MateListoItem(new Item.Settings()
+            .food(ModFoodComponent.MATELISTO)
+            .maxCount(1)
+    ));
+
+    public static final Item MATE_LISTO_NEGRO = registerItem("mate_listo_negro", new MateListoItem(new Item.Settings()
+            .food(ModFoodComponent.MATELISTO)
+            .maxCount(1)
+    ));
+
+    public static final Item MATE_LISTO_AMARILLO = registerItem("mate_listo_amarillo", new MateListoItem(new Item.Settings()
+            .food(ModFoodComponent.MATELISTO)
+            .maxCount(1)
+    ));
+
+    public static final Item MATE_LISTO_GRIS1 = registerItem("mate_listo_gris1", new MateListoItem(new Item.Settings()
+            .food(ModFoodComponent.MATELISTO)
+            .maxCount(1)
+    ));
+
+    public static final Item MATE_LISTO_GRIS2 = registerItem("mate_listo_gris2", new MateListoItem(new Item.Settings()
+            .food(ModFoodComponent.MATELISTO)
+            .maxCount(1)
+    ));
+
+    public static final Item MATE_LISTO_AZUL = registerItem("mate_listo_azul", new MateListoItem(new Item.Settings()
+            .food(ModFoodComponent.MATELISTO)
+            .maxCount(1)
+    ));
+
+    public static final Item MATE_LISTO_CELESTE = registerItem("mate_listo_celeste", new MateListoItem(new Item.Settings()
+            .food(ModFoodComponent.MATELISTO)
+            .maxCount(1)
+    ));
+
+    public static final Item MATE_LISTO_CYAN = registerItem("mate_listo_cyan", new MateListoItem(new Item.Settings()
+            .food(ModFoodComponent.MATELISTO)
+            .maxCount(1)
+    ));
+
+    public static final Item MATE_LISTO_ARGENTO = registerItem("mate_listo_argento", new MateListoItem(new Item.Settings()
+            .food(ModFoodComponent.MATELISTO)
+            .maxCount(1)
     ));
 
     public static final Item YERBA = registerItem("yerba", new Item(new Item.Settings()));
@@ -67,6 +147,24 @@ public class ModItem {
             entries.add(YERBA);
             entries.add(MATE);
             entries.add(TERMO_ARGENTO);
+
+            entries.add(MATE_LISTO_BLANCO);
+            entries.add(MATE_LISTO_NARANJA);
+            entries.add(MATE_LISTO_MARRON);
+            entries.add(MATE_LISTO_MAGENTA);
+            entries.add(MATE_LISTO_ROJO);
+            entries.add(MATE_LISTO_VIOLETA);
+            entries.add(MATE_LISTO_ROSA);
+            entries.add(MATE_LISTO_VERDE2);
+            entries.add(MATE_LISTO_VERDE1);
+            entries.add(MATE_LISTO_NEGRO);
+            entries.add(MATE_LISTO_AMARILLO);
+            entries.add(MATE_LISTO_GRIS1);
+            entries.add(MATE_LISTO_GRIS2);
+            entries.add(MATE_LISTO_AZUL);
+            entries.add(MATE_LISTO_CELESTE);
+            entries.add(MATE_LISTO_CYAN);
+            entries.add(MATE_LISTO_ARGENTO);
         });
 
         // Registrar todas las cartas

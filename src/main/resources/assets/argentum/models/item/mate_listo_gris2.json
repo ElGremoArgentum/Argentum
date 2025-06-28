@@ -1,7 +1,7 @@
 ﻿{
     "textures":  {
-                     "1":  "argentum:item/mate_listo_blanco",
-                     "particle":  "argentum:item/mate_listo_blanco"
+                     "1":  "argentum:item/mate_listo_gris2",
+                     "particle":  "argentum:item/mate_listo_gris2"
                  },
     "elements":  [
                      {

@@ -24,7 +24,22 @@ public class ModItemGroups {
                         entries.add(ModItem.TERMO_ARGENTO);
                         entries.add(ModItem.YERBA_SEMILLA);
                         entries.add(ModItem.MATE_LISTO_BLANCO);
-
+                        entries.add(ModItem.MATE_LISTO_NARANJA);
+                        entries.add(ModItem.MATE_LISTO_MARRON);
+                        entries.add(ModItem.MATE_LISTO_MAGENTA);
+                        entries.add(ModItem.MATE_LISTO_ROJO);
+                        entries.add(ModItem.MATE_LISTO_VIOLETA);
+                        entries.add(ModItem.MATE_LISTO_ROSA);
+                        entries.add(ModItem.MATE_LISTO_VERDE2);
+                        entries.add(ModItem.MATE_LISTO_VERDE1);
+                        entries.add(ModItem.MATE_LISTO_NEGRO);
+                        entries.add(ModItem.MATE_LISTO_AMARILLO);
+                        entries.add(ModItem.MATE_LISTO_GRIS1);
+                        entries.add(ModItem.MATE_LISTO_GRIS2);
+                        entries.add(ModItem.MATE_LISTO_AZUL);
+                        entries.add(ModItem.MATE_LISTO_CELESTE);
+                        entries.add(ModItem.MATE_LISTO_CYAN);
+                        entries.add(ModItem.MATE_LISTO_ARGENTO);
                     })
                     .build());
 
