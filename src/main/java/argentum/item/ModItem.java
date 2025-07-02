@@ -121,7 +121,8 @@ public class ModItem {
 
     // Palos y números de cartas
     private static final String[] PALOS = {"espada", "palo", "copa", "oro"};
-    private static final int[] NUMEROS = {1, 2, 3, 4, 5, 6, 7, 10, 11, 12};
+    private static final int[] NUMEROS = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+
 
 
     // Array para guardar las cartas si querés acceder después
@@ -133,6 +134,8 @@ public class ModItem {
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Argentum.MOD_ID, name), item);
     }
+
+    public static final Item CARTA_COMODIN = registerItem("carta_comodin", new Item(new Item.Settings()));
 
 
 
@@ -194,6 +197,7 @@ public class ModItem {
                                     entries.add(Registries.ITEM.get(Identifier.of(Argentum.MOD_ID, nombre)));
                                 }
                             }
+                            entries.add(CARTA_COMODIN);
                         })
                         .build()
         );

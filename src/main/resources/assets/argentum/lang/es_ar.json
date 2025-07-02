@@ -5,9 +5,24 @@
   "item.argentum.termo_argento": "Termo Argento",
   "item.argentum.yerba": "Yerba",
   "item.argentum.mate": "Mate",
-
+  "item.argentum.mate_listo_naranja": "Mate Listo Naranja",
+  "item.argentum.mate_listo_blanco": "Mate Listo Blanco",
+  "item.argentum.mate_listo_marron": "Mate Listo Marrón",
+  "item.argentum.mate_listo_magenta": "Mate Listo Magenta",
+  "item.argentum.mate_listo_rojo": "Mate Listo Rojo",
+  "item.argentum.mate_listo_violeta": "Mate Listo Violeta",
+  "item.argentum.mate_listo_rosa": "Mate Listo Rosa",
+  "item.argentum.mate_listo_verde2": "Mate Listo Verde Oscuro",
+  "item.argentum.mate_listo_verde1": "Mate Listo Verde Claro",
+  "item.argentum.mate_listo_negro": "Mate Listo Negro",
+  "item.argentum.mate_listo_amarillo": "Mate Listo Amarillo",
+  "item.argentum.mate_listo_gris1": "Mate Listo Gris Claro",
+  "item.argentum.mate_listo_azul": "Mate Listo Azul",
+  "item.argentum.mate_listo_gris2": "Mate Listo Gris Oscuro",
+  "item.argentum.mate_listo_celeste": "Mate Listo Celeste",
+  "item.argentum.mate_listo_cyan": "Mate Listo Cyan",
+  "item.argentum.mate_listo_argento": "Mate Listo Argento",
   "item.argentum.yerba_semilla": "Semilla de Yerba",
-
   "item.argentum.carta_espada_1": "1 de Espada",
   "item.argentum.carta_espada_2": "2 de Espada",
   "item.argentum.carta_espada_3": "3 de Espada",
@@ -48,32 +63,23 @@
   "item.argentum.carta_oro_10": "Sota de Oro",
   "item.argentum.carta_oro_11": "Caballo de Oro",
   "item.argentum.carta_oro_12": "Rey de Oro",
-
   "block.argentum.uno": "Uno",
   "block.argentum.dos": "Dos",
   "block.argentum.tres": "Tres",
   "block.argentum.cuatro": "Cuatro",
   "block.argentum.cinco": "Cinco",
   "block.argentum.seis": "Seis",
-
-
   "block.argentum.planta_yerba": "Planta de Yerba",
-
-
   "ItemGroup.argentum.termo": "Mates",
   "ItemGroup.argentum.uno": "Dados",
   "itemGroup.argentum.cartas": "Cartas Argentum",
-
   "container.argentum.mazo_de_cartas": "Mazo de Cartas",
-
   "advancement.argentum.mate_listo.title": "Mate Listo",
   "advancement.argentum.mate_listo.description": "Conseguí un Mate Listo",
   "advancement.argentum.crear_mate.title": "Crear un Mate",
   "advancement.argentum.crear_mate.description": "Creaste un Mate",
-
   "advancement.argentum.crear_termo_argento.title": "Crear un Termo Argento",
   "advancement.argentum.crear_termo_argento.description": "Creaste un Termo Argento",
-
   "advancement.argentum.tener_as_espada.title": "Tener el As de Espada",
   "advancement.argentum.tener_as_espada.description": "Obtuviste el As de Espada"
 }
