@@ -54,6 +54,12 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CUATRO);
                         entries.add(ModBlocks.CINCO);
                         entries.add(ModBlocks.SEIS);
+                        entries.add(ModItem.FICHA_CASINO_1);
+                        entries.add(ModItem.FICHA_CASINO_5);
+                        entries.add(ModItem.FICHA_CASINO_32);
+                        entries.add(ModItem.FICHA_CASINO_64);
+                        entries.add(ModItem.FICHA_CASINO_ESPECIAL);
+                        entries.add(ModItem.FICHA_CASINO_OTRA);
                     })
                     .build());
 

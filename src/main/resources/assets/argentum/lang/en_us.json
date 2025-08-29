@@ -82,13 +82,19 @@
   "block.argentum.cuatro": "Cuatro",
   "block.argentum.cinco": "Cinco",
   "block.argentum.seis": "Seis",
+  "item.argentum.ficha_casino_1": "1 Ficha",
+  "item.argentum.ficha_casino_5": "5 Fichas",
+  "item.argentum.ficha_casino_32": "32 Fichas",
+  "item.argentum.ficha_casino_64": "64 Fichas",
+  "item.argentum.ficha_casino_especial": "Ficha Especial",
+  "item.argentum.ficha_casino_otra": "Otra Ficha",
 
 
   "block.argentum.planta_yerba": "Planta de Yerba",
 
 
   "ItemGroup.argentum.termo": "Mates",
-  "ItemGroup.argentum.uno": "Dados",
+  "ItemGroup.argentum.uno": "Casino",
   "itemGroup.argentum.cartas": "Cartas Argentum",
 
   "container.argentum.mazo_de_cartas": "Mazo de Cartas",

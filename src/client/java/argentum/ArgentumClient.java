@@ -1,7 +1,5 @@
 package argentum;
 
-import argentum.block.ModBlocks;
-import argentum.block.entity.ModBlockEntities;
 import argentum.item.*;
 import net.fabricmc.api.ClientModInitializer;
 

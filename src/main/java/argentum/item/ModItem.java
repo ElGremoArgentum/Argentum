@@ -114,6 +114,13 @@ public class ModItem {
             .maxCount(1)
     ));
 
+    public static final Item FICHA_CASINO_5 = registerItem("ficha_casino_5", new Item(new Item.Settings()));
+    public static final Item FICHA_CASINO_32 = registerItem("ficha_casino_32", new Item(new Item.Settings()));
+    public static final Item FICHA_CASINO_64 = registerItem("ficha_casino_64", new Item(new Item.Settings()));
+    public static final Item FICHA_CASINO_ESPECIAL = registerItem("ficha_casino_especial", new Item(new Item.Settings()));
+    public static final Item FICHA_CASINO_OTRA = registerItem("ficha_casino_otra", new Item(new Item.Settings()));
+    public static final Item FICHA_CASINO_1 = registerItem("ficha_casino_1", new Item(new Item.Settings()));
+
     public static final Item YERBA = registerItem("yerba", new Item(new Item.Settings()));
     public static final Item YERBA_PLANTA = registerItem("yerba_planta", new Item(new Item.Settings()));
     public static final Item YERBA_SEMILLA = registerItem("yerba_semilla",
