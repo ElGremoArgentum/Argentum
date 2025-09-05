@@ -6,6 +6,15 @@
   "item.argentum.yerba": "Yerba",
   "item.argentum.mate": "Mate",
 
+  "item.argentum.taza_de_arcilla": "Taza de Arcilla",
+  "item.argentum.taza": "Taza",
+  "item.argentum.saquito_te": "Saquito de Te",
+  "item.argentum.saquito_matecocido": "Saquito de Matecocido",
+  "item.argentum.taza_de_te": "Taza de Te",
+  "item.argentum.taza_de_matecocido": "Taza de Matecocido",
+
+
+
   "item.argentum.mate_listo_naranja": "Mate Listo Naranja",
   "item.argentum.mate_listo_blanco": "Mate Listo Blanco",
   "item.argentum.mate_listo_marron": "Mate Listo Marrón",
@@ -108,4 +117,11 @@
   "advancement.argentum.crear_termo_argento.description": "Creaste un Termo Argento",
 
   "advancement.argentum.tener_as_espada.title": "Tener el As de Espada",
-  "advancement.argentum.tener_as_espada.description": "Obtuviste el As de Espada"}
+  "advancement.argentum.tener_as_espada.description": "Obtuviste el As de Espada",
+
+  "itemGroup.argentum.termo": "Argentum - Mate & Termo",
+  "itemGroup.argentum.uno": "Argentum - Casino Blocks"
+
+
+
+}

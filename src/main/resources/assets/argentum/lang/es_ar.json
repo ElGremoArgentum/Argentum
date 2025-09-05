@@ -81,5 +81,12 @@
   "advancement.argentum.crear_termo_argento.title": "Crear un Termo Argento",
   "advancement.argentum.crear_termo_argento.description": "Creaste un Termo Argento",
   "advancement.argentum.tener_as_espada.title": "Tener el As de Espada",
-  "advancement.argentum.tener_as_espada.description": "Obtuviste el As de Espada"
+  "advancement.argentum.tener_as_espada.description": "Obtuviste el As de Espada",
+
+  "itemGroup.argentum.termo": "Argentum - Mate & Termo",
+  "itemGroup.argentum.uno": "Argentum - Bloques de Casino"
+
+
+
+
 }

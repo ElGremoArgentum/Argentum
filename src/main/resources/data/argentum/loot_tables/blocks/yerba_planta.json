@@ -2,15 +2,7 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "conditions": [
-        {
-          "condition": "minecraft:block_state_property",
-          "block": "argentum:yerba_planta",
-          "properties": {
-            "age": "5"
-          }
-        }
-      ],
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
@@ -19,33 +11,20 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 2.0,
-                "max": 3.0
+                "min": 2,
+                "max": 3
               }
-            },
-            {
-              "function": "minecraft:apply_bonus",
-              "enchantment": "minecraft:fortune",
-              "formula": "ore_drops"
             }
           ]
-        }
-      ]
-    },
-    {
-      "conditions": [
-        {
-          "condition": "minecraft:block_state_property",
-          "block": "argentum:yerba_planta",
-          "properties": {
-            "age": "5"
-          }
-        }
-      ],
-      "entries": [
+        },
         {
           "type": "minecraft:item",
           "name": "argentum:yerba_semilla"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
         }
       ]
     }

@@ -1,6 +1,6 @@
 {
   "parent": "block/crop",
   "textures": {
-    "crop": "argentum:block/yerba_planta_stage0"
+    "crop": "argentum:block/yerba_top"
   }
 }

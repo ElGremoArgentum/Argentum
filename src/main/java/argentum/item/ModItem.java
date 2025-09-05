@@ -4,11 +4,10 @@ import argentum.Argentum;
 import argentum.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
-import argentum.item.ModItemGroups;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -18,6 +17,20 @@ import net.minecraft.util.Identifier;
 
 
 public class ModItem {
+
+    public static final Item INFUSION = Registry.register(
+            Registries.ITEM,
+            Identifier.of("argentum", "infusion"),
+            new Infusion(new Item.Settings()
+                    .food(new FoodComponent.Builder()
+                            .nutrition(2)             // antes hunger
+                            .saturationModifier(0.6F) // saturación
+                            .alwaysEdible()
+                            .build()
+                    ))
+    );
+
+
     public static final Item CALABAZA_MATE = registerItem("calabaza_mate", new Item(new Item.Settings()));
 
     public static final Item TERMO = registerItem("termo", new TermoItem(new Item.Settings().maxCount(1)));
@@ -28,6 +41,18 @@ public class ModItem {
     public static final Item MATE = registerItem("mate", new MateItem(new Item.Settings()
             .food(ModFoodComponent.MATE)
             .maxCount(1)));
+
+    public static final Item TAZA_DE_ARCILLA = registerItem("taza_de_arcilla", new Item(new Item.Settings().maxCount(64)));
+    public static final Item TAZA = registerItem("taza", new Item(new Item.Settings().maxCount(64)));
+    public static final Item SAQUITO_TE = registerItem("saquito_te", new Item(new Item.Settings().maxCount(64)));
+    public static final Item SAQUITO_MATECOCIDO = registerItem("saquito_matecocido", new Item(new Item.Settings().maxCount(64)));
+    public static final Item TAZA_DE_TE = registerItem("taza_de_te", new Infusion(new Item.Settings()
+            .food(ModFoodComponent.INFUSION)
+            .maxCount(1)));
+    public static final Item TAZA_DE_MATECOCIDO = registerItem("taza_de_matecocido", new Infusion(new Item.Settings()
+            .food(ModFoodComponent.INFUSION)
+            .maxCount(1)));
+
 
     public static final Item MATE_LISTO_BLANCO = registerItem("mate_listo_blanco", new MateListoItem(new Item.Settings()
             .food(ModFoodComponent.MATELISTO)
@@ -126,6 +151,17 @@ public class ModItem {
     public static final Item YERBA_SEMILLA = registerItem("yerba_semilla",
             new AliasedBlockItem(ModBlocks.YERBA_PLANTA, new Item.Settings()));
 
+    //public static final Item CAFE = registerItem("cafe", new Item(new Item.Settings()));
+    //public static final Item CAFE_PLANTA = registerItem("cafe_planta", new Item(new Item.Settings()));
+    //public static final Item CAFE_SEMILLA = registerItem("cafe_semilla",
+            //new AliasedBlockItem(ModBlocks.CAFE_PLANTA, new Item.Settings()));
+
+    public static final Item TE = registerItem("te", new Item(new Item.Settings()));
+    //public static final Item TE_PLANTA = registerItem("te_planta", new Item(new Item.Settings()));
+    //public static final Item TE_SEMILLA = registerItem("te_semilla",
+    //new AliasedBlockItem(ModBlocks.TE_PLANTA, new Item.Settings()));
+
+
     // Palos y números de cartas
     private static final String[] PALOS = {"espada", "palo", "copa", "oro"};
     private static final int[] NUMEROS = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
@@ -157,6 +193,14 @@ public class ModItem {
             entries.add(YERBA);
             entries.add(MATE);
             entries.add(TERMO_ARGENTO);
+            entries.add(TAZA);
+            entries.add(TAZA_DE_ARCILLA);
+            entries.add(SAQUITO_TE);
+            entries.add(SAQUITO_MATECOCIDO);
+            entries.add(TAZA_DE_TE);
+            entries.add(TAZA_DE_MATECOCIDO);
+            entries.add(TE);
+
 
             entries.add(MATE_LISTO_BLANCO);
             entries.add(MATE_LISTO_NARANJA);

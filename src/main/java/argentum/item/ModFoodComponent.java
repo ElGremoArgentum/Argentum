@@ -7,4 +7,6 @@ public class ModFoodComponent {
             .nutrition(3).build();
     public static final FoodComponent MATELISTO = new FoodComponent.Builder().snack().saturationModifier(3f)
             .nutrition(3).build();
+    public static final FoodComponent INFUSION = new FoodComponent.Builder().snack().saturationModifier(3f)
+            .nutrition(3).build();
 }
