@@ -1,52 +1,41 @@
 package argentum.block.custom;
 
-import argentum.block.ModBlocks;
-
-import net.minecraft.block.BlockState;
-import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.math.random.Random; // IMPORT CORRECTO
-import net.minecraft.block.CropBlock;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemConvertible;
-import net.minecraft.server.world.ServerWorld;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
 import argentum.item.ModItem;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.CropBlock;
+import net.minecraft.item.ItemConvertible;
+import net.minecraft.state.StateManager;
+import net.minecraft.state.property.IntProperty;
 
 public class Yerba_Planta extends CropBlock {
 
+    public static final int MAX_AGE = 5;
+    public static final IntProperty AGE = IntProperty.of("age", 0, 5);
+
     public Yerba_Planta(Settings settings) {
         super(settings);
+        this.setDefaultState(this.stateManager.getDefaultState().with(AGE, 0));
     }
 
-    // Define tus semillas
+    // MUY IMPORTANTE: define la semilla de este cultivo
     @Override
     protected ItemConvertible getSeedsItem() {
-        return ModItem.YERBA;
+        return ModItem.YERBA_SEMILLA;
     }
-
-    public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-        super.randomTick(state, world, pos, random);
-
-        int age = state.get(AGE);
-        if (age >= 7) {
-            BlockPos topPos = pos.up();
-            if (world.isAir(topPos)) {
-                world.setBlockState(topPos, ModBlocks.YERBA_TOP.getDefaultState().with(Yerba_Top.AGE, age));
-            }
-        }
-    }
-
 
     @Override
-    public void afterBreak(World world, PlayerEntity player, BlockPos pos, BlockState state, BlockEntity blockEntity, ItemStack stack) {
-        super.afterBreak(world, player, pos, state, blockEntity, stack);
+    public IntProperty getAgeProperty() {
+        return AGE;
+    }
 
-        BlockPos topPos = pos.up();
-        if (world.getBlockState(topPos).getBlock() instanceof Yerba_Top) {
-            world.breakBlock(topPos, false);
-        }
+    @Override
+    public int getMaxAge() {
+        return 5;
+    }
+
+    @Override
+    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
+        builder.add(AGE);
     }
 }
-

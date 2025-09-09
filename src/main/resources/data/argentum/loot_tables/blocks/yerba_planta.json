@@ -5,26 +5,24 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "argentum:yerba",
-          "functions": [
+          "type": "minecraft:alternatives",
+          "children": [
             {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
-                "max": 3
-              }
+              "type": "minecraft:loot_table",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "argentum:yerba_planta",
+                  "properties": { "age": "5" }
+                }
+              ],
+              "name": "argentum:blocks/yerba_planta_madura"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "argentum:yerba_semilla"
             }
           ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "argentum:yerba_semilla"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
         }
       ]
     }

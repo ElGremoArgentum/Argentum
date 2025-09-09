@@ -5,11 +5,7 @@ import argentum.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.component.type.FoodComponent;
-import net.minecraft.item.AliasedBlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -147,14 +143,16 @@ public class ModItem {
     public static final Item FICHA_CASINO_1 = registerItem("ficha_casino_1", new Item(new Item.Settings()));
 
     public static final Item YERBA = registerItem("yerba", new Item(new Item.Settings()));
-    public static final Item YERBA_PLANTA = registerItem("yerba_planta", new Item(new Item.Settings()));
-    public static final Item YERBA_SEMILLA = registerItem("yerba_semilla",
-            new AliasedBlockItem(ModBlocks.YERBA_PLANTA, new Item.Settings()));
+    // ModItems.registerItems()
+    public static final Item YERBA_SEMILLA = Registry.register(Registries.ITEM,
+            Identifier.of("argentum", "yerba_semilla"),
+            new BlockItem(ModBlocks.YERBA_PLANTA, new Item.Settings()));
+
 
     //public static final Item CAFE = registerItem("cafe", new Item(new Item.Settings()));
     //public static final Item CAFE_PLANTA = registerItem("cafe_planta", new Item(new Item.Settings()));
     //public static final Item CAFE_SEMILLA = registerItem("cafe_semilla",
-            //new AliasedBlockItem(ModBlocks.CAFE_PLANTA, new Item.Settings()));
+    //new AliasedBlockItem(ModBlocks.CAFE_PLANTA, new Item.Settings()));
 
     public static final Item TE = registerItem("te", new Item(new Item.Settings()));
     //public static final Item TE_PLANTA = registerItem("te_planta", new Item(new Item.Settings()));
@@ -191,6 +189,7 @@ public class ModItem {
             entries.add(TERMO);
             entries.add(BOMBILLA);
             entries.add(YERBA);
+            entries.add(ModItem.YERBA_SEMILLA);
             entries.add(MATE);
             entries.add(TERMO_ARGENTO);
             entries.add(TAZA);

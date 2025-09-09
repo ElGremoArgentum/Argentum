@@ -5,8 +5,6 @@
     "age=2": { "model": "argentum:block/yerba_planta_stage2" },
     "age=3": { "model": "argentum:block/yerba_planta_stage3" },
     "age=4": { "model": "argentum:block/yerba_planta_stage4" },
-    "age=5": { "model": "argentum:block/yerba_planta_stage5" },
-    "age=6": { "model": "argentum:block/yerba_planta_stage6" },
-    "age=7": { "model": "argentum:block/yerba_planta_stage7" }
+    "age=5": { "model": "argentum:block/yerba_planta_stage5" }
   }
 }

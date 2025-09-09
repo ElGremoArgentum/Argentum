@@ -3,8 +3,9 @@
   "item.argentum.bombilla": "Bombilla",
   "item.argentum.termo": "Termo",
   "item.argentum.termo_argento": "Termo Argento",
-  "item.argentum.yerba": "Yerba",
+  "item.argentum.yerba": "Hojas de Yerba",
   "item.argentum.mate": "Mate",
+  "block.argentum.yerba_planta": "Planta de Yerba",
 
   "item.argentum.taza_de_arcilla": "Taza de Arcilla",
   "item.argentum.taza": "Taza",
@@ -12,6 +13,7 @@
   "item.argentum.saquito_matecocido": "Saquito de Matecocido",
   "item.argentum.taza_de_te": "Taza de Te",
   "item.argentum.taza_de_matecocido": "Taza de Matecocido",
+  "item.argentum.te": "Hojas de Te",
 
 
 

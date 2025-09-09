@@ -7,8 +7,8 @@ group = 'argentum'
 version = '1.0.0'
 archivesBaseName = 'argentum'
 
-sourceCompatibility = JavaVersion.VERSION_17
-targetCompatibility = JavaVersion.VERSION_17
+sourceCompatibility = JavaVersion.VERSION_21
+targetCompatibility = JavaVersion.VERSION_21
 
 repositories {
     maven { url = "https://maven.fabricmc.net/" }
@@ -41,5 +41,5 @@ java {
 
 tasks.withType(JavaCompile).configureEach {
     it.options.encoding = "UTF-8"
-    it.options.release = 17
+    it.options.release = 21
 }
