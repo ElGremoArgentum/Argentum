@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.*;
+import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -49,87 +50,54 @@ public class ModItem {
             .food(ModFoodComponent.INFUSION)
             .maxCount(1)));
 
-
     public static final Item MATE_LISTO_BLANCO = registerItem("mate_listo_blanco", new MateListoItem(new Item.Settings()
             .food(ModFoodComponent.MATELISTO)
-            .maxCount(1)
-    ));
-
+            .maxCount(1)));
     public static final Item MATE_LISTO_NARANJA = registerItem("mate_listo_naranja", new MateListoItem(new Item.Settings()
             .food(ModFoodComponent.MATELISTO)
-            .maxCount(1)
-    ));
-
+            .maxCount(1)));
     public static final Item MATE_LISTO_MARRON = registerItem("mate_listo_marron", new MateListoItem(new Item.Settings()
             .food(ModFoodComponent.MATELISTO)
-            .maxCount(1)
-    ));
-
+            .maxCount(1)));
     public static final Item MATE_LISTO_MAGENTA = registerItem("mate_listo_magenta", new MateListoItem(new Item.Settings()
             .food(ModFoodComponent.MATELISTO)
-            .maxCount(1)
-    ));
-
+            .maxCount(1)));
     public static final Item MATE_LISTO_ROJO = registerItem("mate_listo_rojo", new MateListoItem(new Item.Settings()
             .food(ModFoodComponent.MATELISTO)
-            .maxCount(1)
-    ));
-
+            .maxCount(1)));
     public static final Item MATE_LISTO_VIOLETA = registerItem("mate_listo_violeta", new MateListoItem(new Item.Settings()
             .food(ModFoodComponent.MATELISTO)
-            .maxCount(1)
-    ));
-
+            .maxCount(1)));
     public static final Item MATE_LISTO_ROSA = registerItem("mate_listo_rosa", new MateListoItem(new Item.Settings()
             .food(ModFoodComponent.MATELISTO)
-            .maxCount(1)
-    ));
-
+            .maxCount(1)));
     public static final Item MATE_LISTO_VERDE2 = registerItem("mate_listo_verde2", new MateListoItem(new Item.Settings()
             .food(ModFoodComponent.MATELISTO)
-            .maxCount(1)
-    ));
-
+            .maxCount(1)));
     public static final Item MATE_LISTO_VERDE1 = registerItem("mate_listo_verde1", new MateListoItem(new Item.Settings()
             .food(ModFoodComponent.MATELISTO)
-            .maxCount(1)
-    ));
-
+            .maxCount(1)));
     public static final Item MATE_LISTO_NEGRO = registerItem("mate_listo_negro", new MateListoItem(new Item.Settings()
             .food(ModFoodComponent.MATELISTO)
-            .maxCount(1)
-    ));
-
+            .maxCount(1)));
     public static final Item MATE_LISTO_AMARILLO = registerItem("mate_listo_amarillo", new MateListoItem(new Item.Settings()
             .food(ModFoodComponent.MATELISTO)
-            .maxCount(1)
-    ));
-
+            .maxCount(1)));
     public static final Item MATE_LISTO_GRIS1 = registerItem("mate_listo_gris1", new MateListoItem(new Item.Settings()
             .food(ModFoodComponent.MATELISTO)
-            .maxCount(1)
-    ));
-
+            .maxCount(1)));
     public static final Item MATE_LISTO_GRIS2 = registerItem("mate_listo_gris2", new MateListoItem(new Item.Settings()
             .food(ModFoodComponent.MATELISTO)
-            .maxCount(1)
-    ));
-
+            .maxCount(1)));
     public static final Item MATE_LISTO_AZUL = registerItem("mate_listo_azul", new MateListoItem(new Item.Settings()
             .food(ModFoodComponent.MATELISTO)
-            .maxCount(1)
-    ));
-
+            .maxCount(1)));
     public static final Item MATE_LISTO_CELESTE = registerItem("mate_listo_celeste", new MateListoItem(new Item.Settings()
             .food(ModFoodComponent.MATELISTO)
-            .maxCount(1)
-    ));
-
+            .maxCount(1)));
     public static final Item MATE_LISTO_CYAN = registerItem("mate_listo_cyan", new MateListoItem(new Item.Settings()
             .food(ModFoodComponent.MATELISTO)
-            .maxCount(1)
-    ));
-
+            .maxCount(1)));
     public static final Item MATE_LISTO_ARGENTO = registerItem("mate_listo_argento", new MateListoItem(new Item.Settings()
             .food(ModFoodComponent.MATELISTO)
             .maxCount(1)
@@ -143,21 +111,14 @@ public class ModItem {
     public static final Item FICHA_CASINO_1 = registerItem("ficha_casino_1", new Item(new Item.Settings()));
 
     public static final Item YERBA = registerItem("yerba", new Item(new Item.Settings()));
-    // ModItems.registerItems()
     public static final Item YERBA_SEMILLA = Registry.register(Registries.ITEM,
             Identifier.of("argentum", "yerba_semilla"),
-            new BlockItem(ModBlocks.YERBA_PLANTA, new Item.Settings()));
-
-
-    //public static final Item CAFE = registerItem("cafe", new Item(new Item.Settings()));
-    //public static final Item CAFE_PLANTA = registerItem("cafe_planta", new Item(new Item.Settings()));
-    //public static final Item CAFE_SEMILLA = registerItem("cafe_semilla",
-    //new AliasedBlockItem(ModBlocks.CAFE_PLANTA, new Item.Settings()));
+            new AliasedBlockItem(ModBlocks.YERBA_PLANTA, new Item.Settings()));
 
     public static final Item TE = registerItem("te", new Item(new Item.Settings()));
-    //public static final Item TE_PLANTA = registerItem("te_planta", new Item(new Item.Settings()));
-    //public static final Item TE_SEMILLA = registerItem("te_semilla",
-    //new AliasedBlockItem(ModBlocks.TE_PLANTA, new Item.Settings()));
+    public static final Item TE_SEMILLA = Registry.register(Registries.ITEM,
+            Identifier.of("argentum", "yerba_semilla"),
+            new AliasedBlockItem(ModBlocks.TE_PLANTA, new Item.Settings()));
 
 
     // Palos y números de cartas
@@ -199,6 +160,7 @@ public class ModItem {
             entries.add(TAZA_DE_TE);
             entries.add(TAZA_DE_MATECOCIDO);
             entries.add(TE);
+            entries.add(TE_SEMILLA);
 
 
             entries.add(MATE_LISTO_BLANCO);

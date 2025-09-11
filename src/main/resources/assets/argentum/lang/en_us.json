@@ -3,21 +3,24 @@
   "item.argentum.bombilla": "Bombilla",
   "item.argentum.termo": "Termo",
   "item.argentum.termo_argento": "Termo Argento",
-  "item.argentum.yerba": "Hojas de Yerba",
+
   "item.argentum.mate": "Mate",
   "block.argentum.yerba_planta": "Planta de Yerba",
 
   "item.argentum.taza_de_arcilla": "Taza de Arcilla",
   "item.argentum.taza": "Taza",
+
   "item.argentum.saquito_te": "Saquito de Te",
   "item.argentum.saquito_matecocido": "Saquito de Matecocido",
+
   "item.argentum.taza_de_te": "Taza de Te",
   "item.argentum.taza_de_matecocido": "Taza de Matecocido",
-  "item.argentum.te": "Hojas de Te",
 
+  "item.argentum.te": "Hojas de Té",
+  "item.argentum.te_semilla": "Semilla de té",
+  "block.argentum.te_planta": "Planta de Té",
 
-
-  "item.argentum.mate_listo_naranja": "Mate Listo Naranja",
+"item.argentum.mate_listo_naranja": "Mate Listo Naranja",
   "item.argentum.mate_listo_blanco": "Mate Listo Blanco",
   "item.argentum.mate_listo_marron": "Mate Listo Marrón",
   "item.argentum.mate_listo_magenta": "Mate Listo Magenta",
@@ -36,6 +39,7 @@
   "item.argentum.mate_listo_argento": "Mate Listo Argento",
 
   "item.argentum.yerba_semilla": "Semilla de Yerba",
+  "item.argentum.yerba": "Hojas de Yerba",
 
   "item.argentum.carta_espada_1": "1 de Espada",
   "item.argentum.carta_espada_2": "2 de Espada",

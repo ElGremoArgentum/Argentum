@@ -55,6 +55,18 @@ public class ModBlocks {
             )
     );
 
+    public static final Block TE_PLANTA = registerBlockWithoutItem(
+            "te_planta",
+            new Yerba_Planta(
+                    Block.Settings.copy(Blocks.WHEAT)
+                            .noCollision()
+                            .nonOpaque()
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.CROP)
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
     // ───────────────────────────────
     // Helpers
     // ───────────────────────────────
