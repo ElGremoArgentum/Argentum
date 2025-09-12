@@ -31,6 +31,20 @@ public class ModItemGroups {
                             entries.add(ModItem.MATE);
                             entries.add(ModItem.TERMO_ARGENTO);
                             entries.add(ModItem.YERBA_SEMILLA);
+                            entries.add(ModItem.TE_SEMILLA);
+
+                            entries.add(ModItem.TAZA_DE_ARCILLA);
+                            entries.add(ModItem.TAZA);
+                            entries.add(ModItem.SAQUITO_TE);
+                            entries.add(ModItem.SAQUITO_MATECOCIDO);
+                            entries.add(ModItem.TAZA_DE_TE);
+                            entries.add(ModItem.TAZA_DE_MATECOCIDO);
+                            entries.add(ModItem.TE);
+
+                            entries.add(ModItem.ACEITE);
+                            entries.add(ModItem.HARINA);
+                            entries.add(ModItem.MANTECA);
+
                             entries.add(ModItem.MATE_LISTO_BLANCO);
                             entries.add(ModItem.MATE_LISTO_NARANJA);
                             entries.add(ModItem.MATE_LISTO_MARRON);
@@ -49,13 +63,6 @@ public class ModItemGroups {
                             entries.add(ModItem.MATE_LISTO_CYAN);
                             entries.add(ModItem.MATE_LISTO_ARGENTO);
 
-                            entries.add(ModItem.TAZA_DE_ARCILLA);
-                            entries.add(ModItem.TAZA);
-                            entries.add(ModItem.SAQUITO_TE);
-                            entries.add(ModItem.SAQUITO_MATECOCIDO);
-                            entries.add(ModItem.TAZA_DE_TE);
-                            entries.add(ModItem.TAZA_DE_MATECOCIDO);
-                            entries.add(ModItem.TE);
                         })
                         .build()
         );
@@ -78,6 +85,7 @@ public class ModItemGroups {
                             entries.add(ModItem.FICHA_CASINO_64);
                             entries.add(ModItem.FICHA_CASINO_ESPECIAL);
                             entries.add(ModItem.FICHA_CASINO_OTRA);
+                            entries.add(ModItem.CUADRO_ARGENTO);
                         })
                         .build()
         );

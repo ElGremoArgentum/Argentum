@@ -117,8 +117,22 @@ public class ModItem {
 
     public static final Item TE = registerItem("te", new Item(new Item.Settings()));
     public static final Item TE_SEMILLA = Registry.register(Registries.ITEM,
-            Identifier.of("argentum", "yerba_semilla"),
+            Identifier.of("argentum", "te_semilla"),
             new AliasedBlockItem(ModBlocks.TE_PLANTA, new Item.Settings()));
+
+    public static final Item ACEITE = Registry.register(
+            Registries.ITEM, Identifier.of("argentum", "aceite"),
+            new Item(new Item.Settings().maxCount(16).recipeRemainder(Items.GLASS_BOTTLE)));
+    public static final Item HARINA = registerItem("harina", new Item(new Item.Settings()));
+    public static final Item MANTECA = registerItem("manteca", new Item(new Item.Settings()));
+
+
+
+    public static final Item CUADRO_ARGENTO = Registry.register(
+            Registries.ITEM, Identifier.of("argentum", "cuadro_argento"),
+            new CuadroArgentoItem(new Item.Settings().maxCount(16))
+    );
+
 
 
     // Palos y números de cartas
@@ -161,6 +175,9 @@ public class ModItem {
             entries.add(TAZA_DE_MATECOCIDO);
             entries.add(TE);
             entries.add(TE_SEMILLA);
+            entries.add(ACEITE);
+            entries.add(HARINA);
+            entries.add(MANTECA);
 
 
             entries.add(MATE_LISTO_BLANCO);
@@ -207,6 +224,7 @@ public class ModItem {
                                     int numero = NUMEROS[j];
                                     String nombre = "carta_" + palo + "_" + numero;
                                     entries.add(Registries.ITEM.get(Identifier.of(Argentum.MOD_ID, nombre)));
+
                                 }
                             }
                             entries.add(CARTA_COMODIN);

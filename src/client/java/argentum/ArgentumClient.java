@@ -13,6 +13,8 @@ public class ArgentumClient implements ClientModInitializer {
     TermoModelPredicates.registerPredicates();
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.YERBA_PLANTA, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), ModBlocks.YERBA_PLANTA);
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TE_PLANTA, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), ModBlocks.TE_PLANTA);
 
 
 

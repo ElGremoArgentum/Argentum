@@ -41,6 +41,11 @@
   "item.argentum.yerba_semilla": "Semilla de Yerba",
   "item.argentum.yerba": "Hojas de Yerba",
 
+  "item.argentum.aceite": "Botella de Aceite",
+  "item.argentum.harina": "Harina",
+  "item.argentum.manteca": "Manteca",
+
+
   "item.argentum.carta_espada_1": "1 de Espada",
   "item.argentum.carta_espada_2": "2 de Espada",
   "item.argentum.carta_espada_3": "3 de Espada",
@@ -90,6 +95,12 @@
   "item.argentum.carta_oro_11": "Caballo de Oro",
   "item.argentum.carta_oro_12": "Rey de Oro",
   "item.argentum.carta_comodin": "Comodin",
+
+
+
+  "item.argentum.cuadro_argento": "Cuadro Argento",
+  "painting.argentum.obelisco.title": "Obelisco",
+  "painting.argentum.obelisco.author": "Argentum",
 
   "block.argentum.uno": "Uno",
   "block.argentum.dos": "Dos",

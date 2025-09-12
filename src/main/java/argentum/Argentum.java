@@ -1,6 +1,7 @@
 package argentum;
 
 import argentum.block.ModBlocks;
+import argentum.event.BlockUseHandlers;
 import argentum.item.ModItem;
 import argentum.item.ModItemGroups;
 import argentum.sound.ModSounds;
@@ -20,6 +21,8 @@ public class Argentum implements ModInitializer {
 		// Registrar block entities
 		ModItemGroups.registerItemsGroups(); // 3) al final grupos creativos
 		ModSounds.registerSounds();    // 4) sonidos
+		BlockUseHandlers.init();
+
 
 
 
