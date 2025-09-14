@@ -5,6 +5,8 @@ import argentum.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.component.type.FoodComponent;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.registry.Registries;
@@ -126,6 +128,30 @@ public class ModItem {
     public static final Item HARINA = registerItem("harina", new Item(new Item.Settings()));
     public static final Item MANTECA = registerItem("manteca", new Item(new Item.Settings()));
 
+    public static final Item MEDIALUNA_CRUDA = registerItem("medialuna_cruda",
+            new Item(new Item.Settings()
+                    .food(new FoodComponent.Builder()
+                            .nutrition(4) // 2 muslitos (igual que antes pero con nutrition)
+                            .saturationModifier(0.3f)
+                            .statusEffect(
+                                    new StatusEffectInstance(StatusEffects.HUNGER, 300, 0), // 15s de Hambre I
+                                    0.8f // 80% probabilidad
+                            )
+                            .alwaysEdible()
+                            .build())));
+    public static final Item MEDIALUNA_COCINADA = registerItem("medialuna_cocinada",
+            new Item(new Item.Settings()
+                    .food(new FoodComponent.Builder()
+                            .nutrition(6) // 3 muslitos
+                            .saturationModifier(0.8f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 200, 0), 1.0f) // 10s Fuerza I
+                            .build())));
+
+    public static final Item LECHE = registerItem("leche",
+            new LecheBebibleItem(new Item.Settings())); // apila a 16 por la clase
+
+
+
 
 
     public static final Item CUADRO_ARGENTO = Registry.register(
@@ -178,6 +204,9 @@ public class ModItem {
             entries.add(ACEITE);
             entries.add(HARINA);
             entries.add(MANTECA);
+            entries.add(MEDIALUNA_COCINADA);
+            entries.add(MEDIALUNA_CRUDA);
+            entries.add(LECHE);
 
 
             entries.add(MATE_LISTO_BLANCO);

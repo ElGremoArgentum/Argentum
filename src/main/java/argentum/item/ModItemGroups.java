@@ -44,6 +44,9 @@ public class ModItemGroups {
                             entries.add(ModItem.ACEITE);
                             entries.add(ModItem.HARINA);
                             entries.add(ModItem.MANTECA);
+                            entries.add(ModItem.LECHE);
+                            entries.add(ModItem.MEDIALUNA_CRUDA);
+                            entries.add(ModItem.MEDIALUNA_COCINADA);
 
                             entries.add(ModItem.MATE_LISTO_BLANCO);
                             entries.add(ModItem.MATE_LISTO_NARANJA);
