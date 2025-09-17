@@ -48,6 +48,15 @@
   "item.argentum.medialuna_cocinada": "Medialuna",
   "item.argentum.leche": "Botella de Leche",
 
+  "item.argentum.pelota": "Pelota",
+
+
+  "block.argentum.olla": "Olla",
+  "container.argentum.olla": "Olla para fritar",
+  "item.argentum.olla": "Olla",
+
+
+
 
   "item.argentum.carta_espada_1": "1 de Espada",
   "item.argentum.carta_espada_2": "2 de Espada",

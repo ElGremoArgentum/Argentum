@@ -152,7 +152,11 @@ public class ModItem {
 
 
 
-
+    public static final Item PELOTA = Registry.register(
+                Registries.ITEM,
+                Identifier.of(Argentum.MOD_ID, "pelota"),
+                new PelotaItem(new Item.Settings())
+        );
 
     public static final Item CUADRO_ARGENTO = Registry.register(
             Registries.ITEM, Identifier.of("argentum", "cuadro_argento"),
@@ -183,6 +187,7 @@ public class ModItem {
 
     public static void registerModItem() {
         Argentum.LOGGER.info("Registering Mod Item for " + Argentum.MOD_ID);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> entries.add(PELOTA));
 
         // Ingredientes (como antes)
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {

@@ -15,6 +15,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
+
 public class ModBlocks {
 
     // Bloques normales (con BlockItem)
@@ -66,6 +67,15 @@ public class ModBlocks {
                             .pistonBehavior(PistonBehavior.DESTROY)
             )
     );
+
+
+    public static void registerBlocks() {
+        // opcional/log
+        System.out.println("Registrando bloques de Argentum");
+    }
+
+
+
 
     // ───────────────────────────────
     // Helpers

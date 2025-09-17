@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SAS",
+    "SFS",
+    "SSS"
+  ],
+  "key": {
+    "S": { "item": "minecraft:cobblestone" },
+    "F": { "item": "minecraft:furnace" },
+    "A": { "item": "argentum:aceite" }
+  },
+  "result": { "item": "argentum:horno_aceite", "count": 1 }
+}
