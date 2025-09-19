@@ -16,6 +16,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import org.jetbrains.annotations.Nullable;
 import net.minecraft.world.World;
+import argentum.recipe.ModRecipes; // <--- IMPORTANTE
 
 /**
  * Horno a Aceite:
@@ -32,8 +33,9 @@ public class OllaBlockEntity extends AbstractFurnaceBlockEntity {
     private static final TagKey<net.minecraft.item.Item> TAG_HORNEABLES =
             TagKey.of(RegistryKeys.ITEM, Identifier.of("argentum", "aceite_horneables"));
 
+
     public OllaBlockEntity(BlockPos pos, BlockState state) {
-        super(Argentum.OLLA_BE, pos, state, RecipeType.SMELTING);
+        super(Argentum.OLLA_BE, pos, state, ModRecipes.FRITAR);
     }
 
     /* Título de la pantalla (lang: container.argentum.horno_aceite) */

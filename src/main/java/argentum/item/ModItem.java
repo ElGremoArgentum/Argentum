@@ -17,18 +17,6 @@ import net.minecraft.util.Identifier;
 
 public class ModItem {
 
-    public static final Item INFUSION = Registry.register(
-            Registries.ITEM,
-            Identifier.of("argentum", "infusion"),
-            new Infusion(new Item.Settings()
-                    .food(new FoodComponent.Builder()
-                            .nutrition(2)             // antes hunger
-                            .saturationModifier(0.6F) // saturación
-                            .alwaysEdible()
-                            .build()
-                    ))
-    );
-
 
     public static final Item CALABAZA_MATE = registerItem("calabaza_mate", new Item(new Item.Settings()));
 
@@ -164,6 +152,76 @@ public class ModItem {
     );
 
 
+    public static final Item EMPANADA_FRITA = registerItem("empanada_frita",
+            new Item(new Item.Settings()
+                    .food(ModFoodComponent.FRITO)   // <- tu componente de comida frita compartido
+                    .maxCount(64)));
+    public static final Item EMPANADA_CRUDA = registerItem("empanada_cruda",
+                    new Item(new Item.Settings()
+                            .food(ModFoodComponent.CRUDOS)
+                            .maxCount(64)));
+    // Tortafrita
+    public static final Item TORTAFRITA_CRUDA = registerItem("tortafrita_cruda",
+            new Item(new Item.Settings()
+                    .food(ModFoodComponent.CRUDOS)
+                    .maxCount(64)));
+
+    public static final Item TORTAFRITA = registerItem("tortafrita",
+            new Item(new Item.Settings()
+                    .food(ModFoodComponent.FRITO)
+                    .maxCount(64)));
+
+    // Pastelito (membrillo)
+    public static final Item PASTELITO_MEMBRILLO_CRUDO = registerItem("pastelito_membrillo_crudo",
+            new Item(new Item.Settings()
+                    .food(ModFoodComponent.CRUDOS)
+                    .maxCount(64)));
+
+    public static final Item PASTELITO_MEMBRILLO_FRITO = registerItem("pastelito_membrillo_frito",
+            new Item(new Item.Settings()
+                    .food(ModFoodComponent.FRITO)
+                    .maxCount(64)));
+
+    // Pastelito (batata)
+    public static final Item PASTELITO_BATATA_CRUDO = registerItem("pastelito_batata_crudo",
+            new Item(new Item.Settings()
+                    .food(ModFoodComponent.CRUDOS)
+                    .maxCount(64)));
+
+    public static final Item PASTELITO_BATATA_FRITO = registerItem("pastelito_batata_frito",
+            new Item(new Item.Settings()
+                    .food(ModFoodComponent.FRITO)
+                    .maxCount(64)));
+
+    // Churros
+    public static final Item CHURRO_CRUDO = registerItem("churro_crudo",
+            new Item(new Item.Settings()
+                    .food(ModFoodComponent.CRUDOS)
+                    .maxCount(64)));
+
+    public static final Item CHURRO_FRITO = registerItem("churro_frito",
+            new Item(new Item.Settings()
+                    .food(ModFoodComponent.FRITO)
+                    .maxCount(64)));
+
+    // Variante con dulce de leche (ítem aparte)
+    public static final Item CHURRO_FRITO_DULCE = registerItem("churro_frito_dulce",
+            new Item(new Item.Settings()
+                    .food(ModFoodComponent.FRITO)
+                    .maxCount(64)));
+
+    // Milanesa
+    public static final Item MILANESA_CRUDA = registerItem("milanesa_cruda",
+            new Item(new Item.Settings()
+                    .food(ModFoodComponent.CRUDOS)
+                    .maxCount(64)));
+
+    public static final Item MILANESA_FRITA = registerItem("milanesa_frita",
+            new Item(new Item.Settings()
+                    .food(ModFoodComponent.FRITO)
+                    .maxCount(64)));
+
+
 
     // Palos y números de cartas
     private static final String[] PALOS = {"espada", "palo", "copa", "oro"};
@@ -212,6 +270,19 @@ public class ModItem {
             entries.add(MEDIALUNA_COCINADA);
             entries.add(MEDIALUNA_CRUDA);
             entries.add(LECHE);
+            entries.add(EMPANADA_CRUDA);
+            entries.add(EMPANADA_FRITA);
+            entries.add(TORTAFRITA_CRUDA);
+            entries.add(TORTAFRITA);
+            entries.add(PASTELITO_MEMBRILLO_CRUDO);
+            entries.add(PASTELITO_MEMBRILLO_FRITO);
+            entries.add(PASTELITO_BATATA_CRUDO);
+            entries.add(PASTELITO_BATATA_FRITO);
+            entries.add(CHURRO_CRUDO);
+            entries.add(CHURRO_FRITO);
+            entries.add(CHURRO_FRITO_DULCE);
+            entries.add(MILANESA_CRUDA);
+            entries.add(MILANESA_FRITA);
 
 
             entries.add(MATE_LISTO_BLANCO);

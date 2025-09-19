@@ -4,10 +4,10 @@ import argentum.block.ModBlocks;
 import argentum.event.BlockUseHandlers;
 import argentum.item.ModItem;
 import argentum.item.ModItemGroups;
+import argentum.recipe.ModRecipes;
 import argentum.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.UseEntityCallback;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -17,9 +17,11 @@ import net.minecraft.entity.passive.CowEntity;
 import net.minecraft.entity.passive.GoatEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.BlockItem;
-import net.minecraft.item.ItemGroups;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.ActionResult;
@@ -27,11 +29,8 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.world.World;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import net.minecraft.item.Item;
 
 // === Tus clases de la olla ===
 import argentum.block.OllaBlock;
@@ -50,7 +49,7 @@ public class Argentum implements ModInitializer {
 							.strength(3.5f)
 							.requiresTool()
 							.luminance(state -> state.get(Properties.LIT) ? 13 : 0)
-							.nonOpaque() // <- clave: evita que ocluya el de abajo
+							.nonOpaque()
 							.solidBlock((s, w, p) -> false)
 							.suffocates((s, w, p) -> false)
 							.blockVision((s, w, p) -> false)
@@ -70,24 +69,21 @@ public class Argentum implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModItemGroups.registerItemsGroups();
 		ModSounds.registerSounds();
+		ModRecipes.register();
 		BlockUseHandlers.init();
 
-		UseEntityCallback.EVENT.register((player, world, hand, entity, hit) ->
-				tryBottleMilk(world, player, hand, entity, hit)
-		);
 
-		// Registrar el BlockItem de la OLLA
+		// Item de la OLLA (importante: registrar el BlockItem para que se vea en creativo)
 		Registry.register(
 				Registries.ITEM,
 				Identifier.of(MOD_ID, "olla"),
 				new BlockItem(OLLA, new Item.Settings())
 		);
 
-		// Agregar a la pestaña funcional vanilla
-		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL)
-				.register(entries -> entries.add(OLLA.asItem()));
+		// QUITADO: no la ponemos en ItemGroups.FUNCTIONAL, solo en tu tab custom.
+		// ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> entries.add(OLLA.asItem()));
 
-		// Combustible (aceite)
+		// combustible aceite
 		FuelRegistry.INSTANCE.add(ModItem.ACEITE, 3200);
 
 		LOGGER.info("Hello Fabric world!");

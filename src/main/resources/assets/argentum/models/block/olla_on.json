@@ -1,7 +1,7 @@
 {
   "textures": {
-    "0": "argentum:block/olla",
-    "particle": "argentum:block/olla"
+    "0": "argentum:block/olla_on",
+    "particle": "argentum:block/olla_on"
   },
   "elements": [
     {

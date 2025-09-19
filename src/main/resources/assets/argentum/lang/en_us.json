@@ -54,8 +54,19 @@
   "block.argentum.olla": "Olla",
   "container.argentum.olla": "Olla para fritar",
   "item.argentum.olla": "Olla",
-
-
+  "item.argentum.empanada_cruda": "Empanada de Carne Cruda",
+  "item.argentum.empanada_frita": "Empanada de Carne Frita",
+  "item.argentum.tortafrita_cruda": "Tortafrita Cruda",
+  "item.argentum.tortafrita": "Tortafrita",
+  "item.argentum.pastelito_membrillo_crudo": "Pastelito de Membrillo Crudo",
+  "item.argentum.pastelito_membrillo_frito": "Pastelito de Membrillo",
+  "item.argentum.pastelito_batata_crudo": "Pastelito de Batata Crudo",
+  "item.argentum.pastelito_batata_frito": "Pastelito de Batata",
+  "item.argentum.churro_crudo": "Churro Crudo",
+  "item.argentum.churro_frito": "Churro",
+  "item.argentum.churro_frito_dulce": "Churro con Dulce de Leche",
+  "item.argentum.milanesa_cruda": "Milanesa Cruda",
+  "item.argentum.milanesa_frita": "Milanesa",
 
 
   "item.argentum.carta_espada_1": "1 de Espada",
@@ -148,7 +159,7 @@
   "advancement.argentum.tener_as_espada.title": "Tener el As de Espada",
   "advancement.argentum.tener_as_espada.description": "Obtuviste el As de Espada",
 
-  "itemGroup.argentum.termo": "Argentum - Mate & Termo",
+  "itemGroup.argentum": "Argentum",
   "itemGroup.argentum.uno": "Argentum - Casino Blocks"
 
 

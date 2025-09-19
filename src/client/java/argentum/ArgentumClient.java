@@ -2,10 +2,8 @@ package argentum;
 
 import argentum.block.ModBlocks;
 import argentum.item.*;
-import argentum.screen.ModScreenHandlers;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
-import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
 import argentum.entity.ModEntities;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
@@ -21,6 +19,7 @@ public class ArgentumClient implements ClientModInitializer {
     BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TE_PLANTA, RenderLayer.getCutout());
     BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), ModBlocks.TE_PLANTA);
     EntityRendererRegistry.register(ModEntities.PELOTA, (ctx) -> new FlyingItemEntityRenderer<>(ctx));
+        BlockRenderLayerMap.INSTANCE.putBlock(Argentum.OLLA, RenderLayer.getTranslucent());
 
 
 
