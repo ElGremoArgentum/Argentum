@@ -5,25 +5,28 @@ import argentum.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.registry.Registry;
 import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
 
-    public static ItemGroup TERMO;
+    public static ItemGroup TERMO; // dejamos el nombre de variable, pero el tab se muestra como "Argentum"
     public static ItemGroup UNO;
 
     public static void registerItemsGroups() {
         Argentum.LOGGER.info("Registering Mod Item Groups for " + Argentum.MOD_ID);
 
+        // Renombrado: el displayName ahora es "Argentum"
+        // (Si preferís translatable, ver notas de lang más abajo)
         TERMO = Registry.register(Registries.ITEM_GROUP,
-                Identifier.of(Argentum.MOD_ID, "termo"),
+                Identifier.of(Argentum.MOD_ID, "argentum"), // antes "termo"
                 FabricItemGroup.builder()
                         .icon(() -> new ItemStack(ModItem.TERMO))
-                        .displayName(Text.translatable("itemGroup.argentum.termo"))
+                        .displayName(Text.literal("Argentum")) // <- nombre visible del tab
                         .entries((displayContext, entries) -> {
+                            // === Items mates/termos/comidas ===
                             entries.add(ModItem.TERMO);
                             entries.add(ModItem.BOMBILLA);
                             entries.add(ModItem.YERBA);
@@ -48,6 +51,20 @@ public class ModItemGroups {
                             entries.add(ModItem.MEDIALUNA_CRUDA);
                             entries.add(ModItem.MEDIALUNA_COCINADA);
 
+                            entries.add(ModItem.EMPANADA_CRUDA);
+                            entries.add(ModItem.EMPANADA_FRITA);
+                            entries.add(ModItem.TORTAFRITA_CRUDA);
+                            entries.add(ModItem.TORTAFRITA);
+                            entries.add(ModItem.PASTELITO_MEMBRILLO_CRUDO);
+                            entries.add(ModItem.PASTELITO_MEMBRILLO_FRITO);
+                            entries.add(ModItem.PASTELITO_BATATA_CRUDO);
+                            entries.add(ModItem.PASTELITO_BATATA_FRITO);
+                            entries.add(ModItem.CHURRO_CRUDO);
+                            entries.add(ModItem.CHURRO_FRITO);
+                            entries.add(ModItem.CHURRO_FRITO_DULCE);
+                            entries.add(ModItem.MILANESA_CRUDA);
+                            entries.add(ModItem.MILANESA_FRITA);
+
                             entries.add(ModItem.MATE_LISTO_BLANCO);
                             entries.add(ModItem.MATE_LISTO_NARANJA);
                             entries.add(ModItem.MATE_LISTO_MARRON);
@@ -66,8 +83,11 @@ public class ModItemGroups {
                             entries.add(ModItem.MATE_LISTO_CYAN);
                             entries.add(ModItem.MATE_LISTO_ARGENTO);
 
+                            // === OLLA en el mismo tab ===
+                            entries.add(argentum.Argentum.OLLA.asItem());
                         })
                         .build()
+
         );
 
         UNO = Registry.register(Registries.ITEM_GROUP,
