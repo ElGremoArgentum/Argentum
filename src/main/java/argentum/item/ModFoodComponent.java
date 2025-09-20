@@ -19,4 +19,6 @@ public class ModFoodComponent {
             .saturationModifier(0.1f)
             // .statusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 200, 0), 1.0f) // opcional
             .build();
+    public static final FoodComponent CARNE_CRUDA = new FoodComponent.Builder()
+            .nutrition(3).saturationModifier(0.2f).build();
 }

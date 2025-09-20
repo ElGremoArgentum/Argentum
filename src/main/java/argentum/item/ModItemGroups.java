@@ -83,8 +83,6 @@ public class ModItemGroups {
                             entries.add(ModItem.MATE_LISTO_CYAN);
                             entries.add(ModItem.MATE_LISTO_ARGENTO);
 
-                            // === OLLA en el mismo tab ===
-                            entries.add(argentum.Argentum.OLLA.asItem());
                         })
                         .build()
 

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "argentum:grasa",
     "argentum:aceite"
   ]
 }

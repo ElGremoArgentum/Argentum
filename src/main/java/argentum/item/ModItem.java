@@ -13,6 +13,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 
 
 public class ModItem {
@@ -92,6 +94,31 @@ public class ModItem {
             .food(ModFoodComponent.MATELISTO)
             .maxCount(1)
     ));
+
+    public static final Item GRASA = Registry.register(
+            Registries.ITEM, Identifier.of(Argentum.MOD_ID, "grasa"),
+            new Item(new Item.Settings())
+    );
+
+    public static final Item CUCHILLO = Registry.register(
+            Registries.ITEM, Identifier.of(Argentum.MOD_ID, "cuchillo"),
+            new CuchilloItem(new Item.Settings())
+    );
+
+    // Crudos
+    public static final Item BIFE_CRUDO = Registry.register(
+            Registries.ITEM, Identifier.of(Argentum.MOD_ID, "bife_crudo"),
+            new BifeItem(new Item.Settings().food(ModFoodComponent.CARNE_CRUDA))
+    );
+
+    public static final Item CARNE_CORTADA_CRUDA = Registry.register(
+            Registries.ITEM, Identifier.of(Argentum.MOD_ID, "carne_cortada_cruda"),
+            new Item(new Item.Settings().food(ModFoodComponent.CARNE_CRUDA))
+    );
+
+
+
+
 
     public static final Item FICHA_CASINO_5 = registerItem("ficha_casino_5", new Item(new Item.Settings()));
     public static final Item FICHA_CASINO_32 = registerItem("ficha_casino_32", new Item(new Item.Settings()));
@@ -302,6 +329,12 @@ public class ModItem {
             entries.add(MATE_LISTO_CELESTE);
             entries.add(MATE_LISTO_CYAN);
             entries.add(MATE_LISTO_ARGENTO);
+
+            entries.add(CUCHILLO);
+            entries.add(CARNE_CORTADA_CRUDA);
+            entries.add(GRASA);
+            entries.add(BIFE_CRUDO);
+
         });
 
         // Registrar todas las cartas

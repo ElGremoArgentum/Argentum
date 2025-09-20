@@ -3,7 +3,7 @@
   "category": "food",
   "group": "olla",
   "ingredient": { "item": "argentum:tortafrita_cruda" },
-  "result": "argentum:tortafrita",
+  "result": { "item": "argentum:tortafrita", "count": 1 },
   "experience": 0.1,
   "cookingtime": 180
 }

@@ -15,7 +15,6 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
-
 public class ModBlocks {
 
     // Bloques normales (con BlockItem)
@@ -43,7 +42,7 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(4f)
                     .requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
-    // ✅ Yerba_Planta (sin BlockItem, porque es cultivo)
+    // Cultivos (sin BlockItem)
     public static final Block YERBA_PLANTA = registerBlockWithoutItem(
             "yerba_planta",
             new Yerba_Planta(
@@ -69,23 +68,15 @@ public class ModBlocks {
     );
 
 
+    /** Registrar bloques (llamar desde Argentum.onInitialize() antes de ModBlockEntities.registerAll()) */
     public static void registerBlocks() {
-        // opcional/log
-        System.out.println("Registrando bloques de Argentum");
+        Argentum.LOGGER.info("Registrando bloques de Argentum");
+
     }
 
-
-
-
-    // ───────────────────────────────
     // Helpers
-    // ───────────────────────────────
     private static Block registerBlockWithoutItem(String name, Block block) {
-        return Registry.register(
-                Registries.BLOCK,
-                Identifier.of(Argentum.MOD_ID, name),
-                block
-        );
+        return Registry.register(Registries.BLOCK, Identifier.of(Argentum.MOD_ID, name), block);
     }
 
     private static Block registerBlock(String name, Block block) {
@@ -94,17 +85,12 @@ public class ModBlocks {
     }
 
     private static void registerBlockItem(String name, Block block) {
-        Registry.register(
-                Registries.ITEM,
-                Identifier.of(Argentum.MOD_ID, name),
-                new BlockItem(block, new Item.Settings())
-        );
+        Registry.register(Registries.ITEM, Identifier.of(Argentum.MOD_ID, name), new BlockItem(block, new Item.Settings()));
     }
 
-    // Registrar bloques en el grupo de ítems
+    /** Agrega bloques a creative tabs (opcional) */
     public static void registerModBlocks() {
         Argentum.LOGGER.info("Registering Mod Blocks for " + Argentum.MOD_ID);
-
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(ModBlocks.UNO);
             entries.add(ModBlocks.DOS);
@@ -112,7 +98,8 @@ public class ModBlocks {
             entries.add(ModBlocks.CUATRO);
             entries.add(ModBlocks.CINCO);
             entries.add(ModBlocks.SEIS);
-            // ⚠️ No agregues YERBA_PLANTA acá porque no tiene BlockItem
+            // No agregar YERBA_PLANTA / TE_PLANTA (no tienen BlockItem)
+            // La OLLA podés sumarla a otro ItemGroup si querés
         });
     }
 }
