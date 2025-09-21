@@ -51,10 +51,7 @@ public final class ModBlocks {
                             .nonOpaque()
                             .breakInstantly()
                             .sounds(BlockSoundGroup.CROP)
-                            .pistonBehavior(PistonBehavior.DESTROY)
-            )
-    );
-
+                            .pistonBehavior(PistonBehavior.DESTROY)));
     public static final Block TE_PLANTA = registerBlockWithoutItem(
             "te_planta",
             new Yerba_Planta(
@@ -63,9 +60,25 @@ public final class ModBlocks {
                             .nonOpaque()
                             .breakInstantly()
                             .sounds(BlockSoundGroup.CROP)
-                            .pistonBehavior(PistonBehavior.DESTROY)
-            )
-    );
+                            .pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block MEMBRILLO_PLANTA = registerBlockWithoutItem(
+            "membrillo_planta",
+            new Yerba_Planta(
+                    Block.Settings.copy(Blocks.WHEAT)
+                            .noCollision()
+                            .nonOpaque()
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.CROP)
+                            .pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block BATATA_PLANTA = registerBlockWithoutItem(
+            "batata_planta",
+            new Yerba_Planta(
+                    Block.Settings.copy(Blocks.WHEAT)
+                            .noCollision()
+                            .nonOpaque()
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.CROP)
+                            .pistonBehavior(PistonBehavior.DESTROY)));
 
     // Olla (bloque sin BE)
     public static final Block OLLA = registerBlock("olla",

@@ -23,7 +23,6 @@ public class Argentum implements ModInitializer {
 		argentum.event.BlockUseHandlers.init();
 		ModBlocks.registerModBlocks();
 		ModRecipes.registerAll();
-		ModSounds.registerSounds();
 
 
 

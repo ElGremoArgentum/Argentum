@@ -59,6 +59,9 @@ public class ModItemGroups {
                             entries.add(ModItem.TAPAS_HOJALDRE);
                             entries.add(ModItem.DULCE_BATATA);
                             entries.add(ModItem.DULCE_MEMBRILLO);
+                            entries.add(ModItem.MEMBRILLO);
+                            entries.add(ModItem.MEMBRILLO_SEMILLA);
+                            entries.add(ModItem.BATATA);
 
                             entries.add(ModItem.EMPANADA_CRUDA);
                             entries.add(ModItem.EMPANADA_FRITA);

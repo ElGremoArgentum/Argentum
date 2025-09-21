@@ -14,10 +14,16 @@ public class ArgentumClient implements ClientModInitializer {
     public void onInitializeClient() {
     MateModelPredicates.registerPredicates();
     TermoModelPredicates.registerPredicates();
+
     BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.YERBA_PLANTA, RenderLayer.getCutout());
     BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), ModBlocks.YERBA_PLANTA);
     BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TE_PLANTA, RenderLayer.getCutout());
     BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), ModBlocks.TE_PLANTA);
+    BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MEMBRILLO_PLANTA, RenderLayer.getCutout());
+    BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), ModBlocks.MEMBRILLO_PLANTA);
+    BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BATATA_PLANTA, RenderLayer.getCutout());
+    BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), ModBlocks.BATATA_PLANTA);
+
     EntityRendererRegistry.register(ModEntities.PELOTA, (ctx) -> new FlyingItemEntityRenderer<>(ctx));
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), ModBlocks.OLLA);
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.OLLA, RenderLayer.getCutout());

@@ -52,7 +52,12 @@
   "item.argentum.tapas_hojaldre": "Tapas de Hojaldre",
   "item.argentum.tapas_empanada": "Tapas de Empanadas",
 
-
+  "item.argentum.membrillo": "Membrillo",
+  "item.argentum.membrillo_semilla": "Semilla de Membrillo",
+  "item.argentum.dulce_membrillo": "Dulce de Membrillo",
+  "item.argentum.batata": "Batata",
+  "item.argentum.batata_semilla": "Semilla de Batata",
+  "item.argentum.dulce_batata": "Dulce de Batata",
 
   "block.argentum.olla": "Olla",
   "block.argentum.olla.busy": "La olla está fritando...",

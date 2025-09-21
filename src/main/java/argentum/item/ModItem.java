@@ -137,6 +137,16 @@ public class ModItem {
             Identifier.of("argentum", "te_semilla"),
             new AliasedBlockItem(ModBlocks.TE_PLANTA, new Item.Settings()));
 
+    public static final Item MEMBRILLO = registerItem("membrillo", new Item(new Item.Settings()));
+    public static final Item MEMBRILLO_SEMILLA = Registry.register(Registries.ITEM,
+            Identifier.of("argentum", "membrillo_semilla"),
+            new AliasedBlockItem(ModBlocks.MEMBRILLO_PLANTA, new Item.Settings()));
+    public static final Item BATATA = Registry.register(
+            Registries.ITEM,
+            Identifier.of("argentum", "batata"),
+            new AliasedBlockItem(ModBlocks.BATATA_PLANTA, new Item.Settings())
+    );
+
     public static final Item ACEITE = Registry.register(
             Registries.ITEM, Identifier.of("argentum", "aceite"),
             new Item(new Item.Settings().maxCount(16).recipeRemainder(Items.GLASS_BOTTLE)));
@@ -327,6 +337,7 @@ public class ModItem {
             entries.add(TAPAS_HOJALDRE);
             entries.add(DULCE_BATATA);
             entries.add(DULCE_MEMBRILLO);
+            entries.add(MEMBRILLO);
 
 
 
