@@ -47,13 +47,15 @@
   "item.argentum.medialuna_cruda": "Medialuna Cruda",
   "item.argentum.medialuna_cocinada": "Medialuna",
   "item.argentum.leche": "Botella de Leche",
+  "item.argentum.dulce_leche": "Dulce de Leche",
+  "item.argentum.pan_rallado": "Pan Rallado",
+  "item.argentum.tapas_hojaldre": "Tapas de Hojaldre",
+  "item.argentum.tapas_empanada": "Tapas de Empanadas",
+
 
   "item.argentum.pelota": "Pelota",
 
 
-  "block.argentum.olla": "Olla",
-  "container.argentum.olla": "Olla para fritar",
-  "item.argentum.olla": "Olla",
   "item.argentum.empanada_cruda": "Empanada de Carne Cruda",
   "item.argentum.empanada_frita": "Empanada de Carne Frita",
   "item.argentum.tortafrita_cruda": "Tortafrita Cruda",
@@ -65,15 +67,16 @@
   "item.argentum.churro_crudo": "Churro Crudo",
   "item.argentum.churro_frito": "Churro",
   "item.argentum.churro_frito_dulce": "Churro con Dulce de Leche",
-  "item.argentum.milanesa_cruda": "Milanesa Cruda",
-  "item.argentum.milanesa_frita": "Milanesa",
+
 
 
   "item.argentum.grasa": "Grasa",
   "item.argentum.cuchillo": "Cuchillo",
+
   "item.argentum.bife_crudo": "Bife crudo",
   "item.argentum.carne_cortada_cruda": "Carne cortada cruda",
-
+  "item.argentum.milanesa_cruda": "Milanesa Cruda",
+  "item.argentum.milanesa_frita": "Milanesa",
 
   "item.argentum.carta_espada_1": "1 de Espada",
   "item.argentum.carta_espada_2": "2 de Espada",

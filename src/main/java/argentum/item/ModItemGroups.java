@@ -45,11 +45,19 @@ public class ModItemGroups {
                             entries.add(ModItem.TE);
 
                             entries.add(ModItem.ACEITE);
+                            entries.add(ModItem.GRASA);
+                            entries.add(ModItem.CUCHILLO);
                             entries.add(ModItem.HARINA);
                             entries.add(ModItem.MANTECA);
                             entries.add(ModItem.LECHE);
                             entries.add(ModItem.MEDIALUNA_CRUDA);
                             entries.add(ModItem.MEDIALUNA_COCINADA);
+                            entries.add(ModItem.DULCE_LECHE);
+                            entries.add(ModItem.PAN_RALLADO);
+                            entries.add(ModItem.TAPAS_EMPANADA);
+                            entries.add(ModItem.TAPAS_HOJALDRE);
+                            entries.add(ModItem.DULCE_BATATA);
+                            entries.add(ModItem.DULCE_MEMBRILLO);
 
                             entries.add(ModItem.EMPANADA_CRUDA);
                             entries.add(ModItem.EMPANADA_FRITA);

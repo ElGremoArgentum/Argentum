@@ -142,6 +142,17 @@ public class ModItem {
             new Item(new Item.Settings().maxCount(16).recipeRemainder(Items.GLASS_BOTTLE)));
     public static final Item HARINA = registerItem("harina", new Item(new Item.Settings()));
     public static final Item MANTECA = registerItem("manteca", new Item(new Item.Settings()));
+    public static final Item DULCE_LECHE = registerItem("dulce_leche", new Item(new Item.Settings()));
+    public static final Item PAN_RALLADO = registerItem("pan_rallado", new Item(new Item.Settings()));
+    public static final Item TAPAS_EMPANADA = registerItem("tapas_empanada", new Item(new Item.Settings()));
+    public static final Item TAPAS_HOJALDRE = registerItem("tapas_hojaldre", new Item(new Item.Settings()));
+    public static final Item DULCE_BATATA = registerItem("dulce_batata", new Item(new Item.Settings()));
+    public static final Item DULCE_MEMBRILLO = registerItem("dulce_membrillo", new Item(new Item.Settings()));
+
+
+
+
+
 
     public static final Item MEDIALUNA_CRUDA = registerItem("medialuna_cruda",
             new Item(new Item.Settings()
@@ -310,6 +321,13 @@ public class ModItem {
             entries.add(CHURRO_FRITO_DULCE);
             entries.add(MILANESA_CRUDA);
             entries.add(MILANESA_FRITA);
+            entries.add(DULCE_LECHE);
+            entries.add(PAN_RALLADO);
+            entries.add(TAPAS_EMPANADA);
+            entries.add(TAPAS_HOJALDRE);
+            entries.add(DULCE_BATATA);
+            entries.add(DULCE_MEMBRILLO);
+
 
 
             entries.add(MATE_LISTO_BLANCO);
