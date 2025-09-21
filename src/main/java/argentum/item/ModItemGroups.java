@@ -44,6 +44,7 @@ public class ModItemGroups {
                             entries.add(ModItem.TAZA_DE_MATECOCIDO);
                             entries.add(ModItem.TE);
 
+                            entries.add(ModBlocks.OLLA);
                             entries.add(ModItem.ACEITE);
                             entries.add(ModItem.GRASA);
                             entries.add(ModItem.CUCHILLO);

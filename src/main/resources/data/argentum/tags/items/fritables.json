@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "argentum:tortafrita_cruda",
+    "argentum:churro_crudo",
+    "argentum:pastelito_batata_crudo",
+    "argentum:pastelito_membrillo_crudo",
+    "argentum:milanesa_cruda"
+  ]
+}

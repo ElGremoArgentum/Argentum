@@ -3,7 +3,7 @@ package argentum;
 import argentum.block.ModBlocks;
 import argentum.item.ModItem;
 import argentum.item.ModItemGroups;
-import argentum.recipe.ModRecipes;
+import argentum.registry.ModRecipes;
 import argentum.registry.ModBlockEntities;
 import argentum.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
@@ -15,15 +15,17 @@ public class Argentum implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
-	public void onInitialize() {
-		ModBlocks.registerBlocks();       // 1) bloques
+	public void onInitialize() {// 1) bloques
 		ModBlockEntities.registerAll();   // 2) block entities
 		ModItem.registerModItem();        // 3) resto
 		ModItemGroups.registerItemsGroups();
 		ModSounds.registerSounds();
-		ModRecipes.register();
 		argentum.event.BlockUseHandlers.init();
 		ModBlocks.registerModBlocks();
+		ModRecipes.registerAll();
+		ModSounds.registerSounds();
+
+
 
 		LOGGER.info("Argentum inicializado ✅");
 	}

@@ -1,6 +1,8 @@
 {
   "variants": {
-    "lit=false": { "model": "argentum:block/olla_off" },
-    "lit=true":  { "model": "argentum:block/olla_on" }
+    "progress=0,lit=false": { "model": "argentum:block/olla_off" },
+    "progress=1,lit=true":  { "model": "argentum:block/olla_on" },
+    "progress=2,lit=true":  { "model": "argentum:block/olla_on" },
+    "progress=3,lit=true":  { "model": "argentum:block/olla_on" }
   }
 }

@@ -53,6 +53,14 @@
   "item.argentum.tapas_empanada": "Tapas de Empanadas",
 
 
+
+  "block.argentum.olla": "Olla",
+  "block.argentum.olla.busy": "La olla está fritando...",
+  "block.argentum.olla.no_oil": "No tenés aceite/grasa.",
+
+
+
+
   "item.argentum.pelota": "Pelota",
 
 

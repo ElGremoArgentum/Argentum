@@ -19,7 +19,8 @@ public class ArgentumClient implements ClientModInitializer {
     BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TE_PLANTA, RenderLayer.getCutout());
     BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), ModBlocks.TE_PLANTA);
     EntityRendererRegistry.register(ModEntities.PELOTA, (ctx) -> new FlyingItemEntityRenderer<>(ctx));
-
+        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), ModBlocks.OLLA);
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.OLLA, RenderLayer.getCutout());
 
 
 

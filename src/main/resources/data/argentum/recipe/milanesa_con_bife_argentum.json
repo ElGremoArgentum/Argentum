@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    { "item": "argentum:pan_rallado" },
-    { "item": "minecraft:egg" },
-    { "item": "argentum:bife" }
-  ],
-  "result": { "id": "argentum:milanesa", "count": 1 }
-}

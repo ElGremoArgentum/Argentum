@@ -1,10 +1,5 @@
 {
-  "mate_ruido": {
-    "sounds": [
-      {
-        "name": "argentum:mate_ruido",
-        "stream": false
-      }
-    ]
-  }
+  "olla_fry_start": { "sounds": [ { "name": "minecraft:block/campfire/crackle1" } ] },
+  "olla_fry_end":   { "sounds": [ { "name": "minecraft:block/furnace/fire_crackle" } ] },
+  "mate_ruido": {"sounds": [{"name": "argentum:mate_ruido", "stream": false}]}
 }
