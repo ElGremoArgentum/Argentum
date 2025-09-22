@@ -13,21 +13,11 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 
 
 public class ModItem {
-
-    public static final Item INFUSION = Registry.register(
-            Registries.ITEM,
-            Identifier.of("argentum", "infusion"),
-            new Infusion(new Item.Settings()
-                    .food(new FoodComponent.Builder()
-                            .nutrition(2)             // antes hunger
-                            .saturationModifier(0.6F) // saturación
-                            .alwaysEdible()
-                            .build()
-                    ))
-    );
 
 
     public static final Item CALABAZA_MATE = registerItem("calabaza_mate", new Item(new Item.Settings()));
@@ -105,6 +95,31 @@ public class ModItem {
             .maxCount(1)
     ));
 
+    public static final Item GRASA = Registry.register(
+            Registries.ITEM, Identifier.of(Argentum.MOD_ID, "grasa"),
+            new Item(new Item.Settings())
+    );
+
+    public static final Item CUCHILLO = Registry.register(
+            Registries.ITEM, Identifier.of(Argentum.MOD_ID, "cuchillo"),
+            new CuchilloItem(new Item.Settings())
+    );
+
+    // Crudos
+    public static final Item BIFE_CRUDO = Registry.register(
+            Registries.ITEM, Identifier.of(Argentum.MOD_ID, "bife_crudo"),
+            new BifeItem(new Item.Settings().food(ModFoodComponent.CARNE_CRUDA))
+    );
+
+    public static final Item CARNE_CORTADA_CRUDA = Registry.register(
+            Registries.ITEM, Identifier.of(Argentum.MOD_ID, "carne_cortada_cruda"),
+            new Item(new Item.Settings().food(ModFoodComponent.CARNE_CRUDA))
+    );
+
+
+
+
+
     public static final Item FICHA_CASINO_5 = registerItem("ficha_casino_5", new Item(new Item.Settings()));
     public static final Item FICHA_CASINO_32 = registerItem("ficha_casino_32", new Item(new Item.Settings()));
     public static final Item FICHA_CASINO_64 = registerItem("ficha_casino_64", new Item(new Item.Settings()));
@@ -122,11 +137,32 @@ public class ModItem {
             Identifier.of("argentum", "te_semilla"),
             new AliasedBlockItem(ModBlocks.TE_PLANTA, new Item.Settings()));
 
+    public static final Item MEMBRILLO = registerItem("membrillo", new Item(new Item.Settings()));
+    public static final Item MEMBRILLO_SEMILLA = Registry.register(Registries.ITEM,
+            Identifier.of("argentum", "membrillo_semilla"),
+            new AliasedBlockItem(ModBlocks.MEMBRILLO_PLANTA, new Item.Settings()));
+    public static final Item BATATA = Registry.register(
+            Registries.ITEM,
+            Identifier.of("argentum", "batata"),
+            new AliasedBlockItem(ModBlocks.BATATA_PLANTA, new Item.Settings())
+    );
+
     public static final Item ACEITE = Registry.register(
             Registries.ITEM, Identifier.of("argentum", "aceite"),
             new Item(new Item.Settings().maxCount(16).recipeRemainder(Items.GLASS_BOTTLE)));
     public static final Item HARINA = registerItem("harina", new Item(new Item.Settings()));
     public static final Item MANTECA = registerItem("manteca", new Item(new Item.Settings()));
+    public static final Item DULCE_LECHE = registerItem("dulce_leche", new Item(new Item.Settings()));
+    public static final Item PAN_RALLADO = registerItem("pan_rallado", new Item(new Item.Settings()));
+    public static final Item TAPAS_EMPANADA = registerItem("tapas_empanada", new Item(new Item.Settings()));
+    public static final Item TAPAS_HOJALDRE = registerItem("tapas_hojaldre", new Item(new Item.Settings()));
+    public static final Item DULCE_BATATA = registerItem("dulce_batata", new Item(new Item.Settings()));
+    public static final Item DULCE_MEMBRILLO = registerItem("dulce_membrillo", new Item(new Item.Settings()));
+
+
+
+
+
 
     public static final Item MEDIALUNA_CRUDA = registerItem("medialuna_cruda",
             new Item(new Item.Settings()
@@ -152,12 +188,86 @@ public class ModItem {
 
 
 
-
+    public static final Item PELOTA = Registry.register(
+                Registries.ITEM,
+                Identifier.of(Argentum.MOD_ID, "pelota"),
+                new PelotaItem(new Item.Settings())
+        );
 
     public static final Item CUADRO_ARGENTO = Registry.register(
             Registries.ITEM, Identifier.of("argentum", "cuadro_argento"),
             new CuadroArgentoItem(new Item.Settings().maxCount(16))
     );
+
+
+    public static final Item EMPANADA_FRITA = registerItem("empanada_frita",
+            new Item(new Item.Settings()
+                    .food(ModFoodComponent.FRITO)   // <- tu componente de comida frita compartido
+                    .maxCount(64)));
+    public static final Item EMPANADA_CRUDA = registerItem("empanada_cruda",
+                    new Item(new Item.Settings()
+                            .food(ModFoodComponent.CRUDOS)
+                            .maxCount(64)));
+    // Tortafrita
+    public static final Item TORTAFRITA_CRUDA = registerItem("tortafrita_cruda",
+            new Item(new Item.Settings()
+                    .food(ModFoodComponent.CRUDOS)
+                    .maxCount(64)));
+
+    public static final Item TORTAFRITA = registerItem("tortafrita",
+            new Item(new Item.Settings()
+                    .food(ModFoodComponent.FRITO)
+                    .maxCount(64)));
+
+    // Pastelito (membrillo)
+    public static final Item PASTELITO_MEMBRILLO_CRUDO = registerItem("pastelito_membrillo_crudo",
+            new Item(new Item.Settings()
+                    .food(ModFoodComponent.CRUDOS)
+                    .maxCount(64)));
+
+    public static final Item PASTELITO_MEMBRILLO_FRITO = registerItem("pastelito_membrillo_frito",
+            new Item(new Item.Settings()
+                    .food(ModFoodComponent.FRITO)
+                    .maxCount(64)));
+
+    // Pastelito (batata)
+    public static final Item PASTELITO_BATATA_CRUDO = registerItem("pastelito_batata_crudo",
+            new Item(new Item.Settings()
+                    .food(ModFoodComponent.CRUDOS)
+                    .maxCount(64)));
+
+    public static final Item PASTELITO_BATATA_FRITO = registerItem("pastelito_batata_frito",
+            new Item(new Item.Settings()
+                    .food(ModFoodComponent.FRITO)
+                    .maxCount(64)));
+
+    // Churros
+    public static final Item CHURRO_CRUDO = registerItem("churro_crudo",
+            new Item(new Item.Settings()
+                    .food(ModFoodComponent.CRUDOS)
+                    .maxCount(64)));
+
+    public static final Item CHURRO_FRITO = registerItem("churro_frito",
+            new Item(new Item.Settings()
+                    .food(ModFoodComponent.FRITO)
+                    .maxCount(64)));
+
+    // Variante con dulce de leche (ítem aparte)
+    public static final Item CHURRO_FRITO_DULCE = registerItem("churro_frito_dulce",
+            new Item(new Item.Settings()
+                    .food(ModFoodComponent.FRITO)
+                    .maxCount(64)));
+
+    // Milanesa
+    public static final Item MILANESA_CRUDA = registerItem("milanesa_cruda",
+            new Item(new Item.Settings()
+                    .food(ModFoodComponent.CRUDOS)
+                    .maxCount(64)));
+
+    public static final Item MILANESA_FRITA = registerItem("milanesa_frita",
+            new Item(new Item.Settings()
+                    .food(ModFoodComponent.FRITO)
+                    .maxCount(64)));
 
 
 
@@ -183,6 +293,7 @@ public class ModItem {
 
     public static void registerModItem() {
         Argentum.LOGGER.info("Registering Mod Item for " + Argentum.MOD_ID);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> entries.add(PELOTA));
 
         // Ingredientes (como antes)
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
@@ -207,6 +318,27 @@ public class ModItem {
             entries.add(MEDIALUNA_COCINADA);
             entries.add(MEDIALUNA_CRUDA);
             entries.add(LECHE);
+            entries.add(EMPANADA_CRUDA);
+            entries.add(EMPANADA_FRITA);
+            entries.add(TORTAFRITA_CRUDA);
+            entries.add(TORTAFRITA);
+            entries.add(PASTELITO_MEMBRILLO_CRUDO);
+            entries.add(PASTELITO_MEMBRILLO_FRITO);
+            entries.add(PASTELITO_BATATA_CRUDO);
+            entries.add(PASTELITO_BATATA_FRITO);
+            entries.add(CHURRO_CRUDO);
+            entries.add(CHURRO_FRITO);
+            entries.add(CHURRO_FRITO_DULCE);
+            entries.add(MILANESA_CRUDA);
+            entries.add(MILANESA_FRITA);
+            entries.add(DULCE_LECHE);
+            entries.add(PAN_RALLADO);
+            entries.add(TAPAS_EMPANADA);
+            entries.add(TAPAS_HOJALDRE);
+            entries.add(DULCE_BATATA);
+            entries.add(DULCE_MEMBRILLO);
+            entries.add(MEMBRILLO);
+
 
 
             entries.add(MATE_LISTO_BLANCO);
@@ -226,6 +358,12 @@ public class ModItem {
             entries.add(MATE_LISTO_CELESTE);
             entries.add(MATE_LISTO_CYAN);
             entries.add(MATE_LISTO_ARGENTO);
+
+            entries.add(CUCHILLO);
+            entries.add(CARNE_CORTADA_CRUDA);
+            entries.add(GRASA);
+            entries.add(BIFE_CRUDO);
+
         });
 
         // Registrar todas las cartas

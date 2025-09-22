@@ -1,0 +1,9 @@
+{
+  "type": "argentum:fritar",
+  "id": "argentum:pastelito_membrillo_olla",
+  "category": "food",
+  "ingredient_item": "argentum:pastelito_membrillo_crudo",
+  "result": "argentum:pastelito_membrillo_frito",
+  "experience": 0.12,
+  "cookingtime": 220
+}

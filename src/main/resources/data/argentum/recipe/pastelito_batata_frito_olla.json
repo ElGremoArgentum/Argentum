@@ -1,0 +1,9 @@
+{
+  "type": "argentum:fritar",
+  "id": "argentum:pastelito_batata_olla",
+  "category": "food",
+  "ingredient_item": "argentum:pastelito_batata_crudo",
+  "result": "argentum:pastelito_batata_frito",
+  "experience": 0.12,
+  "cookingtime": 220
+}
